@@ -27,7 +27,6 @@ const SignupScreen = ({ navigation }) => {
   
     useEffect(() => {
       if (result.status === "rejected") {
-        console.log("Error al agregar el usuario", result);
         setErrorAddUser("Ups! No se pudo agregar el usuario");
         Toast.show({
           type: 'error',
@@ -38,7 +37,6 @@ const SignupScreen = ({ navigation }) => {
         setPassword("");
         setConfirmPassword("");
       } else if (result.status === "fulfilled") {
-        console.log("Usuario agregado con éxito");
         dispatch(setUser(result.data));
         setEmail("");
         setPassword("");
@@ -56,15 +54,12 @@ const SignupScreen = ({ navigation }) => {
       } catch (error) {
         switch (error.path) {
           case "email":
-            console.log(error.message);
             setErrorEmail(error.message);
             break;
           case "password":
-            console.log(error.message);
             setErrorPassword(error.message);
             break;
           case "confirmPassword":
-            console.log(error.message);
             setErrorConfirmPassword(error.message);
             break;
           default:

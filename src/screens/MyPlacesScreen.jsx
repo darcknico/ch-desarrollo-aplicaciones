@@ -71,7 +71,7 @@ const MyPlacesScreen = () => {
               latitude: item.coords.latitude,
               longitude: item.coords.longitude,
             }}
-            title={"Lugar Súper Cuyo"}
+            title={"Lugar de mi tienda"}
           />
         </MapView>
       </View>
@@ -96,8 +96,6 @@ const MyPlacesScreen = () => {
         if (data.status === "OK") {
           const formattedAddress = data.results[0].formatted_address;
           setAddress(formattedAddress);
-        } else {
-          console.log("Error en geocodificación inversa:", data.error_message);
         }
         showToast("success", "¡Ubicación obtenida!");
       } else {
