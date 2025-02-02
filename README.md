@@ -42,3 +42,6 @@ Construida con React Native y Expo, incluye funcionalidades como registro, inici
     ```bash
     npx expo start
     ```
+## Recursos
+
+- APK del proyecto [https://expo.dev/artifacts/eas/eDqWf9p3THSWW6ggm9Egxs.apk](https://expo.dev/artifacts/eas/eDqWf9p3THSWW6ggm9Egxs.apk)
