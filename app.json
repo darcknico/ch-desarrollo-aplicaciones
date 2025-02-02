@@ -19,10 +19,25 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDjWgFvL_Ttc_R6RSfS8HCalEL4MTLZSaU"
+        }
+      },
+      "package": "com.anonymous.chDesarrolloAplicaciones"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-sqlite"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3a1e4f1c-7eeb-49d7-97c0-caace5152ebb"
+      }
     }
   }
 }

@@ -1,0 +1,1 @@
+export const APP_LINEAR_GRADIENT_SCREEN = ['#43799B', '#497195', '#585F8C'];
